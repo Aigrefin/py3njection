@@ -24,7 +24,7 @@ setup(
 	'inversion of control'
 	],
   classifiers = [
-	'Development Status :: 1 - Beta',
+	'Development Status :: 4 - Beta',
 	'Environment :: Console',
 	'Intended Audience :: Developers',
 	'License :: OSI Approved :: BSD License',
