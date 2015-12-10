@@ -1,9 +1,8 @@
 Py3njection
 ===========
-A dependency injection module using python 3 annotations
 
-How to use (basics)
--------------------
+How to use
+----------
 
 .. code-block:: python
 
@@ -20,14 +19,18 @@ How to use (basics)
 How does it work ?
 ------------------
 
-The decorator *@inject* look for any annotated method/function parameters (*return* annotation excluded).
+The decorator *@inject* looks for any annotated method/function parameters (*return* annotation excluded).
 
 It creates a new object from the specified class if no object is already provided.
 
 How to install
 --------------
 
-At the moment, this project is not hosted on PyPI yet.
+It's available on PyPI !
+
+.. code-block::
+
+    pip install py3injection
 
 Some Notes
 ----------
