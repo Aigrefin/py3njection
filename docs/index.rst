@@ -10,6 +10,10 @@ Welcome to p3njection's documentation!
     :target: https://travis-ci.org/Aigrefin/py3njection
     :alt: Build Status
 
+.. image:: https://codecov.io/github/Aigrefin/py3njection/coverage.svg?branch=master
+    :target: https://codecov.io/github/Aigrefin/py3njection?branch=master
+    :alt: Tests status
+
 .. image:: https://readthedocs.org/projects/py3njection/badge/?version=latest
     :target: http://py3njection.readthedocs.org/en/latest/?badge=latest
     :alt: Documentation Status
