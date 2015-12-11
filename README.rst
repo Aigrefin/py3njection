@@ -33,7 +33,7 @@ How does it work ?
 
 The decorator *@inject* looks for any annotated method/function parameters (*return* annotation excluded).
 
-It creates a new object from the specified class if no object is already provided.
+It creates a **new** object from the specified class **if no** object is already provided.
 
 How to install
 --------------

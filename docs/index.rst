@@ -1,8 +1,3 @@
-.. p3njection documentation master file, created by
-sphinx-quickstart on Thu Dec 10 16:41:40 2015.
-You can adapt this file completely to your liking, but it should at least
-contain the root `toctree` directive.
-
 Welcome to p3njection's documentation!
 ======================================
 
@@ -38,7 +33,7 @@ How does it work ?
 
 The decorator *@inject* looks for any annotated method/function parameters (*return* annotation excluded).
 
-It creates a new object from the specified class if no object is already provided.
+It creates a **new** object from the specified class **if no** object is already provided.
 
 How to install
 --------------
@@ -54,7 +49,3 @@ Some Notes
 
 - Unit tests come easy to set up (unless you have too many dependencies, but that would be a code smell, right ?). Juste specify mock instances at your object creation. Examples will come later.
 - This also means the injected object could also have some of its members injected too at their initialization !
-
-
-.. toctree::
-:maxdepth: 2
