@@ -6,6 +6,15 @@ contain the root `toctree` directive.
 Welcome to p3njection's documentation!
 ======================================
 
+.. image:: https://travis-ci.org/Aigrefin/py3njection.svg
+    :target: https://travis-ci.org/Aigrefin/py3njection
+    :alt: Build Status
+
+.. image:: https://readthedocs.org/projects/py3njection/badge/?version=latest
+    :target: http://py3njection.readthedocs.org/en/latest/?badge=latest
+    :alt: Documentation Status
+
+
 How to use
 ----------
 
