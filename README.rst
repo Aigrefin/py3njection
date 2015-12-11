@@ -24,7 +24,7 @@ How to use
     class Demo:
         @inject
         def __init__(self, object_to_use: ClassToInject):
-            object_to_use.call_method()
+            self.dependency = object_to_use
 
     demo = Demo()
 
