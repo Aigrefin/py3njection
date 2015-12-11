@@ -18,7 +18,6 @@ Welcome to p3njection's documentation!
     :target: http://py3njection.readthedocs.org/en/latest/?badge=latest
     :alt: Documentation Status
 
-
 How to use
 ----------
 
@@ -46,7 +45,7 @@ How to install
 
 It's available on PyPI !
 
-.. code-block::
+.. code-block:: bash
 
     pip install py3injection
 
