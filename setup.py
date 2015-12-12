@@ -1,11 +1,16 @@
+import os
 from distutils.core import setup
+
+long_description = 'A dependency injection module using python 3 annotations'
+if os.path.isfile('README.rst'):
+    long_description=open('README.rst').read()
 
 setup(
     name='py3njection',
     packages=['py3njection'],  # this must be the same as the name above
-    version='1.1',
+    version='1.2',
     description='A dependency injection module using python 3 annotations',
-    long_description=open('README.rst').read(),
+    long_description=long_description,
     author='Julien Tellier',
     author_email='julien.pascal.tellier@gmail.com',
     maintainer='Julien Tellier',
