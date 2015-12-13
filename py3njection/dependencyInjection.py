@@ -1,8 +1,7 @@
 from functools import wraps
-from typing import Callable
 
 
-def inject(function_to_wrap: Callable) -> Callable:
+def inject(function_to_wrap):
     """This decorator will inject a new instance of every annotated parameter
     of a function.
 
@@ -12,9 +11,7 @@ def inject(function_to_wrap: Callable) -> Callable:
     More on http://py3njection.readthedocs.org/en/latest/
 
     :param function_to_wrap: the function that will be injected with instances.
-    :type function_to_wrap: Callable
     :return: the new decorated function with its instances
-    :rtype: Callable
 
     :Example:
 
@@ -31,7 +28,7 @@ def inject(function_to_wrap: Callable) -> Callable:
     """
 
     @wraps(function_to_wrap)
-    def wrapper(*arguments: list, **keywords: dict):
+    def wrapper(*arguments, **keywords):
         for (function_argument_keyword, dependency) in function_to_wrap.__annotations__.items():
             if function_argument_keyword != 'return' and function_argument_keyword not in keywords:
                 keywords[function_argument_keyword] = dependency()

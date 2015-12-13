@@ -13,6 +13,10 @@ Welcome to p3njection's documentation!
     :target: http://py3njection.readthedocs.org/en/latest/?badge=latest
     :alt: Documentation Status
 
+.. image:: https://badges.gitter.im/Join%20Chat.svg
+    :target: https://gitter.im/Aigrefin/py3njection?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+    :alt: Join the chat at https://gitter.im/Aigrefin/py3njection
+
 How to use
 ----------
 
