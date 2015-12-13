@@ -1,6 +1,10 @@
 Py3njection
 ===========
 
+.. image:: https://badges.gitter.im/Join%20Chat.svg
+   :alt: Join the chat at https://gitter.im/Aigrefin/py3njection
+   :target: https://gitter.im/Aigrefin/py3njection?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
+
 .. image:: https://travis-ci.org/Aigrefin/py3njection.svg
 :target: https://travis-ci.org/Aigrefin/py3njection
     :alt: Build Status
