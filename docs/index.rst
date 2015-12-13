@@ -44,6 +44,15 @@ It's available on PyPI !
 
     pip install py3injection
 
+Contact and Contribution
+------------------------
+
+Feel free to contribute in any way :
+
+- help, bugs, issues, suggestions : https://github.com/Aigrefin/py3njection/issues
+- twitter account : https://twitter.com/Julien_Tellier
+- and finally my mail address is in the setup.py
+
 Some Notes
 ----------
 

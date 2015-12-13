@@ -2,15 +2,15 @@ Py3njection
 ===========
 
 .. image:: https://travis-ci.org/Aigrefin/py3njection.svg
-    :target: https://travis-ci.org/Aigrefin/py3njection
+:target: https://travis-ci.org/Aigrefin/py3njection
     :alt: Build Status
 
 .. image:: https://codecov.io/github/Aigrefin/py3njection/coverage.svg?branch=master
-    :target: https://codecov.io/github/Aigrefin/py3njection?branch=master
+:target: https://codecov.io/github/Aigrefin/py3njection?branch=master
     :alt: Tests status
 
 .. image:: https://readthedocs.org/projects/py3njection/badge/?version=latest
-    :target: http://py3njection.readthedocs.org/en/latest/?badge=latest
+:target: http://py3njection.readthedocs.org/en/latest/?badge=latest
     :alt: Documentation Status
 
 How to use
@@ -43,6 +43,15 @@ It's available on PyPI !
 .. code-block:: bash
 
     pip install py3injection
+
+Contact and Contribution
+------------------------
+
+Feel free to contribute in any way :
+
+- help, bugs, issues, suggestions : https://github.com/Aigrefin/py3njection/issues
+- twitter account : https://twitter.com/Julien_Tellier
+- and finally my mail address is in the setup.py
 
 Some Notes
 ----------
