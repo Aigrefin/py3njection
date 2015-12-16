@@ -8,7 +8,7 @@ if os.path.isfile('README.rst'):
 setup(
     name='py3njection',
     packages=['py3njection'],  # this must be the same as the name above
-    version='1.3',
+    version='1.4',
     description='A simple dependency injection module using python 3 annotations',
     long_description=long_description,
     author='Julien Tellier',
@@ -37,8 +37,6 @@ setup(
         'License :: OSI Approved :: BSD License',
         'Operating System :: OS Independent',
         'Programming Language :: Python :: 3',
-        'Programming Language :: Python :: 3.1',
-        'Programming Language :: Python :: 3.2',
         'Programming Language :: Python :: 3.3',
         'Programming Language :: Python :: 3.4',
         'Programming Language :: Python :: 3.5',
