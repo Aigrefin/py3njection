@@ -16,7 +16,7 @@ setup(
     maintainer='Julien Tellier',
     maintainer_email='julien.pascal.tellier@gmail.com',
     url='https://github.com/Aigrefin/py3njection',
-    download_url='https://github.com/Aigrefin/py3njection/tarball/0.1',
+    download_url='https://github.com/Aigrefin/py3njection/tarball/1.4',
     license='BSD New',
     keywords=[
         'dependency',
