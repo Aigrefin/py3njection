@@ -1,24 +1,21 @@
 Welcome to p3njection's documentation!
 ======================================
 
-.. image:: https://travis-ci.org/Aigrefin/py3njection.svg
-    :target: https://travis-ci.org/Aigrefin/py3njection
-    :alt: Build Status
+.. include:: badges.rst
 
-.. image:: https://codecov.io/github/Aigrefin/py3njection/coverage.svg?branch=master
-    :target: https://codecov.io/github/Aigrefin/py3njection?branch=master
-    :alt: Tests status
+Table of content
+----------------
 
-.. image:: https://readthedocs.org/projects/py3njection/badge/?version=latest
-    :target: http://py3njection.readthedocs.org/en/latest/?badge=latest
-    :alt: Documentation Status
+.. toctree::
+    :maxdepth: 2
 
-.. image:: https://badges.gitter.im/Join%20Chat.svg
-    :target: https://gitter.im/Aigrefin/py3njection?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge
-    :alt: Join the chat at https://gitter.im/Aigrefin/py3njection
+    index
+    advanced_usage
 
 How to use
 ----------
+
+Put inject on top of the method. All annotated parameters will be injected with an instance matching the annotation type.
 
 .. code-block:: python
 
@@ -37,7 +34,22 @@ How does it work ?
 
 The decorator *@inject* looks for any annotated method/function parameters (*return* annotation excluded).
 
-It creates a **new** object from the specified class **if no** object is already provided.
+**If no** object is already provided, that is if no parameter is given and no default parameter exists, *@inject* will provide and instance. This instance is either a new object, or the result of the class factory (see :doc:`advanced_usage`)
+
+What if I want a singleton ?
+----------------------------
+
+Put it on top of the class to mark as singleton.
+
+.. code-block:: python
+
+    @singleton
+    class ClassToInject:
+        pass
+
+That's it ! When *@inject* sees a class with this decorator, it **always** uses the **same** instance.
+
+**Note** : It stays a singleton as long as your using *@inject* to get the instance.
 
 How to install
 --------------
@@ -47,6 +59,8 @@ It's available on PyPI !
 .. code-block:: bash
 
     pip install py3injection
+
+Or get it at : https://pypi.python.org/pypi/py3njection
 
 Contact and Contribution
 ------------------------

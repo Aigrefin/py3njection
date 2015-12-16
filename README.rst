@@ -39,6 +39,17 @@ The decorator *@inject* looks for any annotated method/function parameters (*ret
 
 It creates a **new** object from the specified class **if no** object is already provided.
 
+What if I want a singleton ?
+----------------------------
+
+.. code-block:: python
+
+    @singleton
+    class ClassToInject:
+        pass
+
+That's it ! When *@inject* sees a class with this decorator, it **always** uses the **same** instance.
+
 How to install
 --------------
 
@@ -47,6 +58,13 @@ It's available on PyPI !
 .. code-block:: bash
 
     pip install py3injection
+
+Or get it at : https://pypi.python.org/pypi/py3njection
+
+Want to know more ?
+-------------------
+
+A more complete documentation is available here : http://py3njection.readthedocs.org/en/latest/
 
 Contact and Contribution
 ------------------------

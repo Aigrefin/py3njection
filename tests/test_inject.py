@@ -9,6 +9,12 @@ class ToInject:
         return ToInject
 
 
+class ToInjectWithInstanceFactory:
+    @classmethod
+    def _instance_factory(cls):
+        return 'special instance'
+
+
 class BeingInjected:
     @inject
     def __init__(self, to_inject: ToInject):
@@ -21,8 +27,12 @@ class BeingInjected:
     def use_dependency(self, to_inject: ToInject):
         return to_inject.return_type()
 
+    @inject
+    def use_scoped_dependency(self, to_inject: ToInjectWithInstanceFactory):
+        return to_inject
 
-class TestComponent(TestCase):
+
+class TestInject(TestCase):
     def test_injectObject_inConstructor_whenNotOverrided(self):
         # When
         being_injected = BeingInjected()
@@ -64,3 +74,13 @@ class TestComponent(TestCase):
 
         # Then
         self.assertEqual(result, str)
+
+    def test_shouldUseInstanceFactory_whenExists(self):
+        # Given
+        injected = BeingInjected()
+
+        # When
+        result = injected.use_scoped_dependency()
+
+        # Then
+        self.assertEqual(result, 'special instance')
