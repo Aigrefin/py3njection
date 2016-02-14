@@ -78,5 +78,5 @@ Feel free to contribute in any way :
 Some Notes
 ----------
 
-- Unit tests come easy to set up (unless you have too many dependencies, but that would be a code smell, right ?). Juste specify mock instances at your object creation. Examples will come later.
+- Unit tests come easy to set up (unless you have too many dependencies, but that would be a code smell, right ?). Just specify mock instances at your object creation. Examples will come later.
 - This also means the injected object could also have some of its members injected too at their initialization !
